@@ -1,21 +1,9 @@
-<button class="btn btn-xs btn-ghost">Menu button</button>
+<button menu-sidebar-button class="btn btn-xs btn-ghost">Menu button</button>
 
 <div
-  menu-sidebar-button
+  menu-sidebar-options
   class="absolute bottom-full left-0 w-full rounded-t-lg hidden flex-col p-4 shadow-md z-50 bg-white"
 >
   <a href="/" class="link link-hover">Home</a>
   <a href="/about">About me</a>
 </div>
-
-<script is:inline>
-  const button = document.querySelector("button");
-  const menu = document.querySelector("[menu-sidebar-button]");
-
-  menu.classList.add("hidden");
-
-  button.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
-    menu.classList.toggle("flex");
-  });
-</script>
