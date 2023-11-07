@@ -1,0 +1,19 @@
+---
+import Sidebar from "../components/sidebar.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <main class="w-full h-screen flex flex-col-reverse">
+      <Sidebar />
+      <div class="z-10">Contenido</div>
+    </main>
+  </body>
+</html>
