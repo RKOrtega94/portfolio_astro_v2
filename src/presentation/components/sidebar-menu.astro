@@ -9,11 +9,13 @@
 </div>
 
 <script>
-  const button = document.getElementById("sidebar-button");
-  const menu = document.getElementById("sidebar-menu");
+  document.addEventListener("astro:after-swap", () => {
+    const button = document.getElementById("sidebar-button");
+    const menu = document.getElementById("sidebar-menu");
 
-  button.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
-    menu.classList.toggle("flex");
+    button.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+      menu.classList.toggle("flex");
+    });
   });
 </script>
