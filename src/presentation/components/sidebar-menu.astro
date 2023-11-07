@@ -1,9 +1,19 @@
-<button menu-sidebar-button class="btn btn-xs btn-ghost">Menu button</button>
+<button id="sidebar-button" class="btn btn-xs btn-ghost">Menu button</button>
 
 <div
-  menu-sidebar-options
+  id="sidebar-menu"
   class="absolute bottom-full left-0 w-full rounded-t-lg hidden flex-col p-4 shadow-md z-50 bg-white"
 >
   <a href="/" class="link link-hover">Home</a>
   <a href="/about">About me</a>
 </div>
+
+<script>
+  const button = document.getElementById("sidebar-button");
+  const menu = document.getElementById("sidebar-menu");
+
+  button.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+    menu.classList.toggle("flex");
+  });
+</script>
