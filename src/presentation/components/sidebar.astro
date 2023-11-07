@@ -1,9 +1,14 @@
 ---
 import SidebarMenu from "./sidebar-menu.astro";
+
+/* Open sidebar */
+const openSidebar = () => {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.classList.remove("hidden");
+};
 ---
 
-<div class="p-4 rounded-r-lg flex justify-between relative">
+<div class="px-4 rounded-r-lg flex justify-between items-center relative h-12">
   <a href="/" class="font-bold text-lg">RKO</a>
-  <button class="btn btn-xs btn-ghost">Menu button</button>
   <SidebarMenu />
 </div>

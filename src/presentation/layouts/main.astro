@@ -15,7 +15,9 @@ import { ViewTransitions } from "astro:transitions";
   <body>
     <main class="w-full h-screen flex flex-col-reverse">
       <Sidebar />
-      <div class="h-full w-full z-10 bg-black"><slot /></div>
+      <div class="h-full w-full z-10">
+        <slot />
+      </div>
     </main>
   </body>
 </html>
