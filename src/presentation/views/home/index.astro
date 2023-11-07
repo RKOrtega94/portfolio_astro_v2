@@ -1,9 +1,22 @@
+---
+import Hero from "../../components/hero.astro";
+---
+
 <div class="w-full h-full flex justify-center items-center">
-  <div class="z-0 w-full h-full">
+  <div class="z-0 w-full h-full relative">
     <img
       src="https://fakeimg.pl/1920x1080/eeeeee/333333/?text=1"
       alt="logo"
-      class="w-full h-full object-cover"
+      class="w-full h-full object-cover absolute -z-50"
     />
+    <div
+      class="h-full w-full bg-gradient-to-tr from-white to-transparent absolute -z-40"
+    >
+    </div>
+    <div
+      class="h-full w-full bg-gradient-to-bl from-white to-transparent absolute -z-40"
+    >
+    </div>
   </div>
+  <Hero />
 </div>

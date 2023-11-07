@@ -18,4 +18,12 @@
       menu.classList.toggle("flex");
     });
   });
+
+  const button = document.getElementById("sidebar-button");
+  const menu = document.getElementById("sidebar-menu");
+
+  button.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+    menu.classList.toggle("flex");
+  });
 </script>
