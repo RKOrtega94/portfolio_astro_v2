@@ -16,5 +16,19 @@
       "name": "C#",
       "icon": "/src/assets/skills/c-sharp.svg"
     }
+  ],
+  "databases": [
+    {
+      "name": "MySQL",
+      "icon": "/src/assets/skills/mysql.svg"
+    },
+    {
+      "name": "PostgreSQL",
+      "icon": "/src/assets/skills/postgresql.svg"
+    },
+    {
+      "name": "MongoDB",
+      "icon": "/src/assets/skills/mongodb.svg"
+    }
   ]
 }
