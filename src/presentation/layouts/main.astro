@@ -12,13 +12,12 @@ import { ViewTransitions } from "astro:transitions";
     <title>Astro</title>
     <ViewTransitions />
   </head>
-  <body>
+  <body class="bg-white">
     <main class="w-full h-screen flex flex-col-reverse">
       <Sidebar />
       <div class="h-full w-full z-10">
         <slot />
       </div>
     </main>
-    <script src="../scripts/menu-button.js"></script>
   </body>
 </html>
