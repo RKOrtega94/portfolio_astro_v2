@@ -4,10 +4,13 @@ import HorizontalScroll from "../../../components/horizontal-scroll.astro";
 import data from "./skils.json";
 
 const languages = data.languages;
+const databases = [];
 ---
 
 <section class="flex flex-col gap-2 w-full">
   <h6 class="text-xl font-bold mx-8">Professional Skills</h6>
   <span class="mx-8 text-lg font-bold">Languajes</span>
   <HorizontalScroll items={languages} />
+  <span class="mx-8 text-lg font-bold">Databases</span>
+  <HorizontalScroll items={databases} />
 </section>

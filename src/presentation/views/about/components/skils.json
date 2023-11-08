@@ -3,6 +3,18 @@
     {
       "name": "Javascript",
       "icon": "/src/assets/skills/javascript.svg"
+    },
+    {
+      "name": "PHP",
+      "icon": "/src/assets/skills/php.svg"
+    },
+    {
+      "name": "Java",
+      "icon": "/src/assets/skills/java.svg"
+    },
+    {
+      "name": "C#",
+      "icon": "/src/assets/skills/c-sharp.svg"
     }
   ]
 }

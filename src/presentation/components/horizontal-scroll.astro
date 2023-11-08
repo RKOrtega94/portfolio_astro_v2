@@ -1,8 +1,8 @@
 ---
-const { items } = Astro.props;
+const { classIdentifier, items } = Astro.props;
 ---
 
-<section class="splide" aria-label="Splide Basic HTML Example">
+<section class="splide">
   <div class="splide__track">
     <ul class="splide__list">
       {
@@ -29,8 +29,9 @@ const { items } = Astro.props;
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const splide = new Splide(".splide", {
-      padding: { left: 10, right: 20 },
+      padding: "5rem",
       fixedWidth: "5rem",
+      fixedHeight: "5rem",
       gap: "1rem",
       arrows: false,
       pagination: false,
