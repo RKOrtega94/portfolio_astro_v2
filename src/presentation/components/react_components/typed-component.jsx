@@ -12,6 +12,7 @@ export default function TypedComponent(props) {
         "Mobile developer",
         "Fullstack developer",
         "Database engineer",
+        "Software engineer",
       ],
       typeSpeed: 50,
       backSpeed: 50,

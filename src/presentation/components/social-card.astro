@@ -1,0 +1,8 @@
+---
+const { name, icon, link } = Astro.props;
+---
+
+<a class="w-16" href={link} target="_blank">
+  <!-- Use icon -->
+  <img src={icon.src} alt={name} class="w-full h-full" />
+</a>

@@ -1,0 +1,33 @@
+---
+import SocialCard from "./social-card.astro";
+
+import LinkedInIcon from "../../assets/icons/linkedin.svg";
+import GithubIcon from "../../assets/icons/github.svg";
+import TelegramIcon from "../../assets/icons/telegram.svg";
+
+const socials: { name: string; icon: ImageMetadata; link: string }[] = [
+  {
+    name: "LinkedIn",
+    icon: LinkedInIcon,
+    link: "https://www.linkedin.com/in/rkortega/",
+  },
+  {
+    name: "Github",
+    icon: GithubIcon,
+    link: "https://github.com/RKOrtega94",
+  },
+  {
+    name: "Telegram",
+    icon: TelegramIcon,
+    link: "https://t.me/rkortega94",
+  },
+];
+---
+
+<div class="w-full max-w-sm flex justify-between space-x-2">
+  {
+    socials.map((item) => (
+      <SocialCard name={item.name} icon={item.icon} link={item.link} />
+    ))
+  }
+</div>

@@ -12,6 +12,10 @@
   "dependencies": {
     "@astrojs/react": "^3.0.4",
     "@astrojs/tailwind": "^5.0.2",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.16",
+    "@mui/material": "^5.14.17",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "astro": "^3.4.3",
