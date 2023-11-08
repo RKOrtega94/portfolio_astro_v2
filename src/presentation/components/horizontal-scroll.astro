@@ -2,7 +2,7 @@
 const { items } = Astro.props;
 ---
 
-<section class="splide">
+<section class="splide" aria-label="other">
   <div class="splide__track">
     <ul class="splide__list">
       {
@@ -15,49 +15,3 @@ const { items } = Astro.props;
     </ul>
   </div>
 </section>
-
-<script
-  src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
-></script>
-<link
-  href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
-  rel="stylesheet"
-/>
-<script
-  src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"
-></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const splide = new Splide(".splide", {
-      padding: "5rem",
-      fixedWidth: "5rem",
-      fixedHeight: "5rem",
-      gap: "1rem",
-      arrows: false,
-      pagination: false,
-      type: "loop",
-      drag: "free",
-      focus: "center",
-      perPage: 3,
-      autoScroll: {
-        speed: 1,
-      },
-    });
-
-    splide.mount(window.splide.Extensions);
-  });
-
-  document.addEventListener("astro:after-swap", () => {
-    const splide = new Splide(".splide", {
-      type: "loop",
-      drag: "free",
-      focus: "center",
-      perPage: 3,
-      autoScroll: {
-        speed: 1,
-      },
-    });
-
-    splide.mount(window.splide.Extensions);
-  });
-</script>

@@ -1,0 +1,59 @@
+---
+const { languajes } = Astro.props;
+---
+
+<section class="splide" aria-label="languajes">
+  <div class="splide__track">
+    <ul class="splide__list">
+      {
+        languajes.map((item: any) => (
+          <li class="splide__slide mx-4">
+            <img src={item.icon} alt={item.name} />
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const splide = new Splide(".splide", {
+      padding: "5rem",
+      fixedWidth: "5rem",
+      fixedHeight: "5rem",
+      gap: "1rem",
+      arrows: false,
+      pagination: false,
+      type: "loop",
+      drag: "free",
+      focus: "center",
+      perPage: 3,
+      autoScroll: {
+        speed: 1,
+      },
+    });
+
+    splide.mount(window.splide.Extensions);
+  });
+
+  document.addEventListener("astro:after-swap", () => {
+    const splide = new Splide(".splide", {
+      padding: "5rem",
+      fixedWidth: "5rem",
+      fixedHeight: "5rem",
+      gap: "1rem",
+      arrows: false,
+      pagination: false,
+      type: "loop",
+      drag: "free",
+      focus: "center",
+      perPage: 3,
+      autoScroll: {
+        speed: 1,
+      },
+    });
+
+    splide.mount(window.splide.Extensions);
+  });
+</script>
