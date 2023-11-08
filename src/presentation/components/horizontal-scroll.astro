@@ -15,3 +15,45 @@ const { items } = Astro.props;
     </ul>
   </div>
 </section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const splide = new Splide(".splide", {
+      padding: "5rem",
+      fixedWidth: "5rem",
+      fixedHeight: "5rem",
+      gap: "1rem",
+      arrows: false,
+      pagination: false,
+      type: "loop",
+      drag: "free",
+      focus: "center",
+      perPage: 3,
+      autoScroll: {
+        speed: 1,
+      },
+    });
+
+    splide.mount(window.splide.Extensions);
+  });
+
+  document.addEventListener("astro:after-swap", () => {
+    const splide = new Splide(".splide", {
+      padding: "5rem",
+      fixedWidth: "5rem",
+      fixedHeight: "5rem",
+      gap: "1rem",
+      arrows: false,
+      pagination: false,
+      type: "loop",
+      drag: "free",
+      focus: "center",
+      perPage: 3,
+      autoScroll: {
+        speed: 1,
+      },
+    });
+
+    splide.mount(window.splide.Extensions);
+  });
+</script>
