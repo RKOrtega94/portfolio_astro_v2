@@ -1,56 +1,62 @@
 ---
 const { items } = Astro.props;
-
-console.log(items);
 ---
 
-<section class="w-full scroll">
-  <div class="m-scroll">
-    {
-      items.map((item) => (
-        <img class="mr-4" src="https://picsum.photos/200/300" alt="" />
-      ))
-    }
+<section class="splide" aria-label="Splide Basic HTML Example">
+  <div class="splide__track">
+    <ul class="splide__list">
+      {
+        items.map((item) => (
+          <li class="splide__slide mx-4">
+            <img src={item.icon} alt={item.name} />
+          </li>
+        ))
+      }
+    </ul>
   </div>
 </section>
-<div class="h-16"></div>
 
-<style>
-  .scroll {
-    position: relative;
-    width: 100vw;
-    background-color: $boxify-bg-light-dark;
-    overflow: hidden;
-    z-index: 1;
-    margin: 0;
-    padding: 0;
-  }
+<script
+  src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+></script>
+<link
+  href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+  rel="stylesheet"
+/>
+<script
+  src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"
+></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const splide = new Splide(".splide", {
+      padding: { left: 10, right: 20 },
+      fixedWidth: "5rem",
+      gap: "1rem",
+      arrows: false,
+      pagination: false,
+      type: "loop",
+      drag: "free",
+      focus: "center",
+      perPage: 3,
+      autoScroll: {
+        speed: 1,
+      },
+    });
 
-  .m-scroll {
-    overflow: hidden;
-    height: 100%;
-    white-space: nowrap;
-    animation: scrollText 10s infinite linear;
-    margin: 0;
-    font-size: 0;
-    display: flex;
-    justify-content: space-between;
-    width: fit-content;
-  }
+    splide.mount(window.splide.Extensions);
+  });
 
-  span {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    color: white;
-  }
+  document.addEventListener("astro:after-swap", () => {
+    const splide = new Splide(".splide", {
+      type: "loop",
+      drag: "free",
+      focus: "center",
+      perPage: 3,
+      autoScroll: {
+        speed: 1,
+      },
+    });
 
-  @keyframes scrollText {
-    from {
-      transform: translateX(0%);
-    }
-    to {
-      transform: translateX(-50%);
-    }
-  }
-</style>
+    splide.mount(window.splide.Extensions);
+  });
+</script>

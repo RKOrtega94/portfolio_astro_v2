@@ -1,7 +1,8 @@
 {
   "languages": [
     {
-      "name": "Javascript"
+      "name": "Javascript",
+      "icon": "/src/assets/skills/javascript.svg"
     }
   ]
 }
