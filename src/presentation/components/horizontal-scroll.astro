@@ -1,0 +1,56 @@
+---
+const { items } = Astro.props;
+
+console.log(items);
+---
+
+<section class="w-full scroll">
+  <div class="m-scroll">
+    {
+      items.map((item) => (
+        <img class="mr-4" src="https://picsum.photos/200/300" alt="" />
+      ))
+    }
+  </div>
+</section>
+<div class="h-16"></div>
+
+<style>
+  .scroll {
+    position: relative;
+    width: 100vw;
+    background-color: $boxify-bg-light-dark;
+    overflow: hidden;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+  }
+
+  .m-scroll {
+    overflow: hidden;
+    height: 100%;
+    white-space: nowrap;
+    animation: scrollText 10s infinite linear;
+    margin: 0;
+    font-size: 0;
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+  }
+
+  span {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+
+  @keyframes scrollText {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+</style>
