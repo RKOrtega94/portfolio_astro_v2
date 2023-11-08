@@ -1,34 +1,62 @@
-{
-  "languages": [
-    {
-      "name": "Javascript",
-      "icon": "/src/assets/skills/javascript.svg"
-    },
-    {
-      "name": "PHP",
-      "icon": "/src/assets/skills/php.svg"
-    },
-    {
-      "name": "Java",
-      "icon": "/src/assets/skills/java.svg"
-    },
-    {
-      "name": "C#",
-      "icon": "/src/assets/skills/c-sharp.svg"
-    }
-  ],
-  "databases": [
-    {
-      "name": "MySQL",
-      "icon": "/src/assets/skills/mysql.svg"
-    },
-    {
-      "name": "PostgreSQL",
-      "icon": "/src/assets/skills/postgresql.svg"
-    },
-    {
-      "name": "MongoDB",
-      "icon": "/src/assets/skills/mongodb.svg"
-    }
-  ]
-}
+[
+  {
+    "name": "Javascript",
+    "icon": "/src/assets/skills/javascript.svg"
+  },
+  {
+    "name": "PHP",
+    "icon": "/src/assets/skills/php.svg"
+  },
+  {
+    "name": "Java",
+    "icon": "/src/assets/skills/java.svg"
+  },
+  {
+    "name": "C#",
+    "icon": "/src/assets/skills/c-sharp.svg"
+  },
+  {
+    "name": "MySQL",
+    "icon": "/src/assets/skills/mysql.svg"
+  },
+  {
+    "name": "PostgreSQL",
+    "icon": "/src/assets/skills/postgresql.svg"
+  },
+  {
+    "name": "Oracle",
+    "icon": "/src/assets/skills/oracle.svg"
+  },
+  {
+    "name": "SQL Server",
+    "icon": "/src/assets/skills/sql-server.svg"
+  },
+  {
+    "name": "MongoDB",
+    "icon": "/src/assets/skills/mongodb.svg"
+  },
+  {
+    "name": "React",
+    "icon": "/src/assets/skills/react.svg"
+  },
+  {
+    "name": "Flutter",
+    "icon": "/src/assets/skills/flutter.svg"
+  },
+  {
+    "name": "Node JS",
+    "icon": "/src/assets/skills/node-js.svg"
+  },
+  {
+    "name": "Next JS",
+    "icon": "/src/assets/skills/next-js.svg"
+  },
+  {
+    "name": "Vue",
+    "icon": "/src/assets/skills/vue.svg"
+  },
+  {
+    "name": "Angular",
+    "icon": "/src/assets/skills/angular.svg"
+  }
+]
