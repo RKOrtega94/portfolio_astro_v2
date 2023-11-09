@@ -1,0 +1,37 @@
+---
+import JavascriptCertificate from "../../../../assets/certificates/diploma-javascript-full-stack.png";
+import PhpCertificate from "../../../../assets/certificates/diploma-desarrollo-php.png";
+import JavaCertificate from "../../../../assets/certificates/diploma-desarrollo-java.png";
+const certificates = [
+  {
+    instutute: "Platzi",
+    name: "Javascript full stack",
+    date: "2020",
+    image: JavascriptCertificate,
+  },
+  {
+    institute: "Platzi",
+    name: "PHP Backend Developer",
+    date: "2020",
+    image: PhpCertificate,
+  },
+  {
+    institute: "Platzi",
+    name: "Java Backend Developer",
+    date: "2020",
+    image: JavaCertificate,
+  },
+];
+---
+
+<section
+  class="w-full grid grid-cols-1 md:grid-cols-3 max-w-6xl self-center gap-4"
+>
+  {
+    certificates.map((item) => (
+      <div class="w-full h-auto">
+        <img src={item.image.src} alt={item.name} />
+      </div>
+    ))
+  }
+</section>
