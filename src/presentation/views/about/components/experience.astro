@@ -1,13 +1,60 @@
 ---
 import ProfessionalExperienceCard from "../../../components/professional-experience-card.astro";
-import Data from "./experience-data.json";
 
-export const experience = Data;
+import LinkIndustriasIcon from "../../../../assets/images/link_industrias.png";
+import EdisoftIcon from "../../../../assets/images/edisoft.png";
+import ProlipaIcon from "../../../../assets/images/prolipa.png";
+
+export const experience = [
+  {
+    company: "Link Industrias",
+    companyLogo: LinkIndustriasIcon,
+    jobTitle: "Full Stack Web Developer",
+    location: "Quito, Ecuador",
+    from: "June 2021",
+    to: "January 2022",
+    description:
+      "Responsible for the development of internal and client websites.",
+    activities: [
+      "I specialize in creating WordPress-based solutions, including custom landing pages, e-commerce websites, web applications, and more.",
+      "Database modeling, optimizations, reports, procedures and jobs.",
+    ],
+  },
+  {
+    company: "Edisoft",
+    companyLogo: EdisoftIcon,
+    jobTitle: "Desarrollador Web / Analista de datos",
+    location: "Quito, Ecuador",
+    from: "February 2022",
+    to: "November 2022",
+    description:
+      "Responsible for database administration and software development.",
+    activities: [
+      "Database Administration (Oracle) designing views, materialized views, jobs, functions, stored procedures, and triggers to enhance query performance and data organization.",
+      "Design and Development of Inventory and Invoicing Management Modules for a WinDev-based Platform",
+    ],
+  },
+  {
+    company: "Prolipa",
+    companyLogo: ProlipaIcon,
+    jobTitle: "Desarrollador Móvil/Web Full Stack",
+    location: "Quito, Ecuador",
+    from: "December 2022",
+    description:
+      "Web and Mobile Application Developer, DevOps, and Database Manager",
+    activities: [
+      "Mobile App Development with Flutter, Testing, and Publishing on PlayStore.",
+      "Web Development with Laravel on the Backend and Vue on the Frontend",
+    ],
+  },
+];
 ---
 
-<section class="flex flex-col gap-2 w-full px-8">
+<section class="flex flex-col gap-2 w-full px-8 max-w-6xl">
   <h6 class="text-lg font-bold">Professional Experience</h6>
-  <div class="w-full flex flex-col gap-4 overflow-x-auto overflow-y-auto">
+  <div
+    class="w-full grid grid-cols-1 md:grid-cols-3 gap-4 overflow-x-auto overflow-y-auto"
+  >
     {
       experience.map((item, index) => (
         <ProfessionalExperienceCard {...item} key={index} />

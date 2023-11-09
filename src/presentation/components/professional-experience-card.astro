@@ -15,7 +15,7 @@ const {
   class="w-full flex flex-col p-1 shadow-md rounded-md border border-gray-300 bg-white h-full"
 >
   <section class="w-full flex justify-start items-center">
-    <img src={companyLogo} alt="Edisoft" class="w-1/4 h-auto" />
+    <img src={companyLogo.src} alt={company} class="w-1/4 h-auto" />
     <div class="w-3/4 h-full px-4">
       <h6 class="text-lg font-bold m-0">
         {company}
@@ -24,12 +24,13 @@ const {
       <span>{from} - {to ?? "Current"}</span>
     </div>
   </section>
+  <h6 class="text-lg font-bold">{jobTitle}</h6>
   <span>
     {description}
   </span>
   <section class="text-sm font-light">
     <ul class="list-disc">
-      {activities.map((activity) => <li>{activity}</li>)}
+      {activities.map((activity) => <li class="list-none">{activity}</li>)}
     </ul>
   </section>
 </article>
