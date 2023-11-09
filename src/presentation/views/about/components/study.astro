@@ -1,6 +1,25 @@
-<section class="flex flex-col gap-2 w-full">
+---
+import ItscoIcon from "../../../../assets/images/logo.png";
+---
+
+<section class="flex flex-col gap-2 w-full px-8">
   <div class="w-full self-center max-w-6xl">
-    <h6 class="text-xl font-bold mx-8">Estudios y certificaciones</h6>
+    <h6 class="text-xl font-bold mx-0 md:mx-8">Estudios y certificaciones</h6>
   </div>
-   contenido
+  <div
+    class="w-full max-w-5xl self-center flex flex-col p-2 rounded-md shadow-md border border-gray-300"
+  >
+    <div class="w-full grid grid-cols-1 gap-2 md:grid-cols-4 items-center">
+      <img class="w-full max-w-xs" src={ItscoIcon.src} alt="itsco" />
+      <div class="w-full flex flex-col items-start md:col-span-3">
+        <h6 class="text-xl font-bold uppercase">
+          Tecnólogo Analista de Sistemas
+        </h6>
+        <span class="font-bold">INSTITUTO TECNOLÓGICO SUPERIOR CORDILLERA</span>
+        <span>
+          <i class="fas fa-calendar-alt"></i> 2019 - 2021
+        </span>
+      </div>
+    </div>
+  </div>
 </section>
