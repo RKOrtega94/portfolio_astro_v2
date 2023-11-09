@@ -22,6 +22,11 @@ const certificates = [
     image: JavaCertificate,
   },
 ];
+
+// Reorder certificates by date last to first
+certificates.sort((a: any, b: any) => {
+  return b.date - a.date;
+});
 ---
 
 <section
