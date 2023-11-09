@@ -1,62 +1,62 @@
 [
   {
     "name": "Javascript",
-    "icon": "/src/assets/skills/javascript.svg"
+    "icon": "javascript.svg"
   },
   {
     "name": "PHP",
-    "icon": "/src/assets/skills/php.svg"
+    "icon": "php.svg"
   },
   {
     "name": "Java",
-    "icon": "/src/assets/skills/java.svg"
+    "icon": "java.svg"
   },
   {
     "name": "C#",
-    "icon": "/src/assets/skills/c-sharp.svg"
+    "icon": "c-sharp.svg"
   },
   {
     "name": "MySQL",
-    "icon": "/src/assets/skills/mysql.svg"
+    "icon": "mysql.svg"
   },
   {
     "name": "PostgreSQL",
-    "icon": "/src/assets/skills/postgresql.svg"
+    "icon": "postgresql.svg"
   },
   {
     "name": "Oracle",
-    "icon": "/src/assets/skills/oracle.svg"
+    "icon": "oracle.svg"
   },
   {
     "name": "SQL Server",
-    "icon": "/src/assets/skills/sql-server.svg"
+    "icon": "sql-server.svg"
   },
   {
     "name": "MongoDB",
-    "icon": "/src/assets/skills/mongodb.svg"
+    "icon": "mongodb.svg"
   },
   {
     "name": "React",
-    "icon": "/src/assets/skills/react.svg"
+    "icon": "react.svg"
   },
   {
     "name": "Flutter",
-    "icon": "/src/assets/skills/flutter.svg"
+    "icon": "flutter.svg"
   },
   {
     "name": "Node JS",
-    "icon": "/src/assets/skills/node-js.svg"
+    "icon": "node-js.svg"
   },
   {
     "name": "Next JS",
-    "icon": "/src/assets/skills/next-js.svg"
+    "icon": "next-js.svg"
   },
   {
     "name": "Vue",
-    "icon": "/src/assets/skills/vue.svg"
+    "icon": "vue.svg"
   },
   {
     "name": "Angular",
-    "icon": "/src/assets/skills/angular.svg"
+    "icon": "angular.svg"
   }
 ]

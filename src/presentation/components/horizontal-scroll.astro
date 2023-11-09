@@ -8,14 +8,14 @@ const { items } = Astro.props;
       {
         items.map((item) => (
           <li class="splide__slide mx-4">
-            <img src={item.icon} alt={item.name} />
+            <img src={item.icon.src} alt={item.name} />
           </li>
         ))
       }
     </ul>
   </div>
 </section>
-
+ 548
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const splide = new Splide(".splide", {

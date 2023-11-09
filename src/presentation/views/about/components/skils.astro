@@ -1,6 +1,39 @@
 ---
 import HorizontalScroll from "../../../components/horizontal-scroll.astro";
-import data from "./skils.json";
+
+import JavascriptIcon from "../../../../assets/skills/javascript.svg";
+import NodeJsIcon from "../../../../assets/skills/node-js.svg";
+import ReactIcon from "../../../../assets/skills/react.svg";
+import VueIcon from "../../../../assets/skills/vue.svg";
+import NextIcon from "../../../../assets/skills/next-js.svg";
+import AngularIcon from "../../../../assets/skills/angular.svg";
+
+const data = [
+  {
+    name: "Javascript",
+    icon: JavascriptIcon,
+  },
+  {
+    name: "NodeJs",
+    icon: NodeJsIcon,
+  },
+  {
+    name: "React",
+    icon: ReactIcon,
+  },
+  {
+    name: "Next Js",
+    icon: NextIcon,
+  },
+  {
+    name: "Vue",
+    icon: VueIcon,
+  },
+  {
+    name: "Angular",
+    icon: AngularIcon,
+  },
+];
 ---
 
 <section class="flex flex-col gap-2 w-full">
